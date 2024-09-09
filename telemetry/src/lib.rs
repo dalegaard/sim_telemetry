@@ -179,8 +179,8 @@ impl Worker {
                     let _ = reply.send(id);
                 }
                 Command::Timestamp(ts) => {
-                    self.ts = ts;
                     self.flush()?;
+                    self.ts = ts;
                 }
                 Command::Update { metric, value } => {
                     let Some(field) = self.inflight.get_mut(metric) else {
