@@ -192,6 +192,7 @@ impl Worker {
                 Command::Exit => break,
             }
         }
+        self.flush()?;
         self.writer.flush()?;
         Ok(())
     }
