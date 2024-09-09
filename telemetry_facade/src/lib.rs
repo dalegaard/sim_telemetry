@@ -27,7 +27,7 @@ macro_rules! metric {
 #[cfg(not(feature = "enable"))]
 #[macro_export]
 macro_rules! metric {
-    ($name:ident [$unit:literal] : $type:ty = $value:expr, [unit:lit]) => {};
+    ($name:ident [$unit:literal] : $type:ty = $value:expr) => {};
 }
 
 #[cfg(feature = "enable")]
