@@ -5,6 +5,6 @@ edition = "2021"
 
 [dependencies]
 crossbeam = { version = "0.8.4", features = ["crossbeam-channel"] }
-fstapi = "0.0.2"
 telemetry_facade = { path = "../telemetry_facade", features = ["enable"] }
 thiserror = "1.0.63"
+csv = "1"
