@@ -1,0 +1,10 @@
+[package]
+name = "telemetry_facade"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+paste = { version = "1", optional = true }
+
+[features]
+enable = ["dep:paste"]
