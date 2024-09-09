@@ -1,6 +1,7 @@
 #![cfg_attr(not(feature = "enable"), no_std)]
 
 #[doc(hidden)]
+#[cfg(feature = "enable")]
 pub use paste::paste;
 
 #[cfg(feature = "enable")]
